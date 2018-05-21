@@ -14,6 +14,10 @@ export const kebabify = (words) =>
 
 export const unkebabify = (str) => capitalize.words(str.replace(/-/g, ' '))
 
+export const caps = (words) =>
+  words
+    .toUpperCase()
+
 export const prettyDate = (date) =>
   new Date(date)
     .toString()
