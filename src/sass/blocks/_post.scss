@@ -91,6 +91,30 @@
     text-decoration: underline;
   }
 
+  &__detail {
+    @extend %ff--500;
+    text-transform: uppercase;
+    line-height: 1.4rem;
+  }
+
+  &__seats {
+    font-size: 2rem;
+    line-height: 1.4rem;
+    margin: 10px 0 20px 0;
+  }
+
+  &__book-button {
+    @extend %ff--500;
+    text-transform: uppercase;
+    line-height: 1.4rem;
+    color: white;
+    background-color: cc(primary);
+    padding: 5px 15px;
+    display: inline-block;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+
   &__sep {
     display: block;
     height: .625rem;

@@ -106,4 +106,10 @@
     white-space: nowrap;
     font-size: .9rem;
   }
+
+  &__presenter {
+    @extend %ff--500;
+    white-space: nowrap;
+    font-size: .9rem;
+  }
 }
