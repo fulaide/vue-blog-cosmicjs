@@ -11,10 +11,11 @@
             </router-link>
 
             <div class="preview__meta">
-              <time class="preview__published">
-                {{ prettyDate(post.published) }}
-              </time>
-
+              by:
+              <span class="preview__presenter">
+                {{ post.presenter }} 
+              </span>
+              on:
               <router-link class="preview__author"
                 :to="`/by/${kebabify(post.author)}`"
                 @click.native="scrollTo(0, 220, scrollDelay)">

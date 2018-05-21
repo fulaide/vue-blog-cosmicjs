@@ -4,7 +4,6 @@
     <blog-nav :content="content" :filters="filters" :navs="navs"/>
     <blog-feed :filters="filters"/>
     <blog-post :post="post"/>
-    <blog-footer/>
   </main>
 </template>
 
@@ -13,15 +12,15 @@ import BlogTitle from './BlogTitle'
 import BlogNav from './BlogNav'
 import BlogFeed from './BlogFeed'
 import BlogPost from './BlogPost'
-import BlogFooter from './BlogFooter'
 
 export default {
   name: 'blog',
-  components: { BlogTitle, BlogNav, BlogFeed, BlogPost, BlogFooter },
+  components: { BlogTitle, BlogNav, BlogFeed, BlogPost },
   resource: 'Blog',
   props: {
     post: String,
-    author: String
+    author: String,
+    presenter: String
   },
 
   data() {
