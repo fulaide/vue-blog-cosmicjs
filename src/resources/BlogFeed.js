@@ -11,7 +11,9 @@ export default {
             image: i.metadata.image.imgix_url,
             published: i.created_at,
             author: i.metadata.author.title,
-            id: i.slug
+            id: i.slug,
+            presenter: i.metadata.presenter,
+            company: i.metadata.company
           };
           return temp;
         })
